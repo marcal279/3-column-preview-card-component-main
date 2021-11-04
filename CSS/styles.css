@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body{
+    text-align: left;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p{
+    margin: 1.5rem 3rem;
+    line-height: 2;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 1.5rem 3rem;
+    font-size: 40px;
+}
+
+img{
+    margin: 3rem 0rem 1rem 3rem;
+}
+
+button{
+    margin: 4rem 0rem 0rem 3rem;
+    background-color: white;
+    height: 3rem;
+    width: 9rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    border: 2px solid white; /* border shorthand for (border-width, border-style, border-color). Solid for style gets rid of shadow */
+    border-radius: 1.5rem;
+    transition-duration: 0.3s;
+}
+
+button:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-rows: 35rem;
+    grid-template-areas: 
+        'a b c';
+    margin: 5rem 0rem 0rem 17.5rem;
+    /* border-radius: 9px; */
+}
+
+/* SEDAN */
+
+.sedan{
+    grid-area: a;
+    display: inline-block;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.sedan button{
+    color:hsl(31, 77%, 52%);
+} 
+
+.sedan button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+/* SUV */
+
+.suv{
+    grid-area: b;
+    display: inline-block;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button{
+    color:hsl(184, 100%, 22%);
+}
+
+.suv button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+/* LUXURY */
+
+.luxury{
+    grid-area: c;
+    display: inline-block;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.luxury button{
+    color:hsl(179, 100%, 13%);
+}
+
+.luxury button:hover{
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Responsiveness */
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .sedan, .suv, .luxury {
+      width: 90%;
+    }
+}
+
+/* Attribution */
+
+.attribution{
+    margin: 2rem 0rem 0rem 17.5rem;
+    color: black;
+}
+
+.attribution a{
+    color:hsl(184, 100%, 22%);
+}
+
+.attribution a:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
